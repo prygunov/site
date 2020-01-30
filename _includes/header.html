@@ -1,0 +1,17 @@
+<header>
+	<div class="logo">
+		<div>
+			<a href="../" target="_self"><img class="headerIcon" src="{{ site.site_icon }}"></a>
+		</div>
+		<a href="../" target="_self"><p class="headerName"><font size="9">{{ site.site_name }}</font></p></a>
+	</div>
+	<nav class="scroll">
+		<ul>
+			{% for page in site.pages %}
+				{% if page.include_in_header == true %}
+				<li><a href="{{ page.url | relative_url }}" target="_self">{{ page.title }}</a></li>
+				{% endif %}
+			{% endfor %}
+		</ul>
+	</nav>
+</header>

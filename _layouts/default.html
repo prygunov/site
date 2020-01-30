@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+{% include head.html %}
+
+<body>
+    <div class="imageWrapper">
+            <div class="headerBackground">
+                <div class="container">
+                    {% include header.html %}
+                    <div class="info">
+                        
+                        <div class="sloganContainer">
+                            <h1 class="slogan">
+                                The biggest thing is nothing without smaller
+                            </h1>
+                        </div>
+                        <div class="linksContainer">
+                            <a class="playStoreLink" href="{{site.playstore_link}}"><img class="playStore" src="assets/playstore.png"></a>
+                        </div>
+                    </div>
+                    {% include footer.html %}
+                </div>
+            </div>
+        </div>
+</body>
+</html>
